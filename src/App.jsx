@@ -1,34 +1,53 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
-
 function App() {
-  const [count, setCount] = useState(0)
 
   return (
-    <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
+<div>
+  <h1>MuistiinpanoApp</h1>
+  <div>
+    <button>Luo muistiinpano</button>
+    <button>listaa muistiinapanot</button>
+    <button>lisää kurssi</button>
+    <h4>Lisää uusi muistiinpano</h4>
+    <textarea name="textinput" id=""></textarea>
+    <br />
+    <button>tallenna</button>
+    <button>takaisin</button>
+  </div>
+  <br />
+
+
+
+  <div>
+  <h4>kurssit: (alasvetovalikko)</h4>
+    <button>takaisin</button>
+  <div style={{ border: "1px solid black"}}>
+  
+  <p>21.9.2022 Javascript (id 0)</p>
+  <span>Thänä kohtaan tulee tallennettu teksti</span>
+  </div>
+  <div style={{ border: "1px solid black"}}>
+  
+  <p>21.9.2022 Javascript (id 0)</p>
+  <span>Thänä kohtaan tulee tallennettu teksti</span>
+  </div>
+  <div style={{ border: "1px solid black"}}>
+  
+  <p>21.9.2022 Javascript (id 0)</p>
+  <span>Thänä kohtaan tulee tallennettu teksti</span>
+  </div>
+
+  </div>
+<br />
+  <div>
+  <button>lisää kurssi</button>
+  <button>takaisin</button>
+  <div>
+    <textarea name="coursename" id=""></textarea>
+  </div>
+  </div>
+
+</div>
+
   )
 }
 
